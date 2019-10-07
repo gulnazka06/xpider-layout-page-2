@@ -1,0 +1,93 @@
+@import "~reset-css/reset.css";
+@import "mixin";
+
+:root {
+  --white: #ffffff;
+  --blue: #2F5BEA;
+  --grey: #D2D2D2;
+  --head-color: #7E8085;
+  --hr-color: #E7EAEE;
+  --br-color:  #2C2E30;
+  --text-color: #54565A;
+  --h-color: #7F99ED;
+  --btn-color: rgba(255, 255, 255, 0.2);
+  --easy-bg-color: #F6F8F9;
+  --team-bg-color: #151C32;
+  --team-text-color: #C9CDD5;
+  --team-br-color: #D8D8D8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mobile {
+    padding: 0 10px;
+  }
+
+  @include tablet-landscape() {
+    padding: 0 16px;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--head-color);
+}
+
+h4 {
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  margin: 15px 0 84px;
+
+  @include mobile(){
+    margin: 15px 0 46px;
+  }
+
+  @include tablet-landscape {
+    font-size: 30px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 24px;
+}
+
+a {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+button {
+  font-size: 17px;
+  line-height: 20px;
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 5px;
+  padding: 13px 20px;
+  border-color: transparent;
+
+  @include mobile() {
+    padding: 16px;
+  }
+}
