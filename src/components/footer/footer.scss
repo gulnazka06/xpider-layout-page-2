@@ -1,0 +1,128 @@
+@import "../../assets/scss/mixin";
+
+.footer-top {
+  background-color: var(--white);
+  position: relative;
+
+  .shape {
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      margin: 0;
+
+      @include mobile {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .container {
+
+    .navs {
+      display: flex;
+      padding: 126px 0 107px;
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 134px 10px;
+      }
+
+      > div {
+        width: 25%;
+
+        @include mobile {
+          margin-bottom: 24px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+
+      a {
+        font-size: 16px;
+        line-height: 39px;
+        color: var(--text-color);
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: var(--easy-bg-color);
+  padding: 33px 0;
+  position: relative;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      display: block;
+    }
+
+    .navs {
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          padding-right: 40px;
+          color: var(--text-color);
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+
+      .lang {
+        padding-right: 24px;
+
+        img {
+          margin-right: 14px;
+        }
+
+        span {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      .social {
+        display: flex;
+
+        a {
+          border-radius: 50%;
+          background-color: var(--text-color);
+          border: transparent;
+          margin-right: 8px;
+          padding: 6px;
+
+          img {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+}

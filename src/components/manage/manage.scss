@@ -1,0 +1,62 @@
+@import "../../assets/scss/mixin";
+
+.help {
+  display: flex;
+  align-items: center;
+  margin-bottom: 134px;
+
+  @include mobile {
+    display: block;
+  }
+
+  @include tablet-landscape {
+    display: block;
+  }
+
+  .manage {
+    h3, h4 {
+      text-align: start;
+
+      @include mobile  {
+        text-align: center;
+      }
+
+      @include tablet-landscape {
+        text-align: center;
+      }
+    }
+
+    h4, p {
+      margin: 15px 0;
+    }
+
+    p {
+      color: var(--text-color);
+    }
+
+    a {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 3px 0;
+      border-bottom: 3px solid var(--blue);
+    }
+  }
+
+  @include mobile {
+    .img {
+      img {
+        width: 100%;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  @include tablet-landscape {
+    .img {
+      img {
+        width: 100%;
+        margin-top: 16px;
+      }
+    }
+  }
+}

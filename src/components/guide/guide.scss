@@ -1,0 +1,86 @@
+@import "../../assets/scss/mixin";
+
+.guide {
+  padding-top: 252px;
+  padding-bottom: 137px;
+
+  @include mobile {
+    padding: 134px 10px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      display: block;
+    }
+
+    @include tablet-landscape {
+      display: block;
+    }
+
+    > img {
+      margin-right: 95px;
+
+      @include mobile {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      @include tablet-landscape {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    .opportunities {
+
+      @include mobile {
+        margin-top: 24px;
+      }
+
+      @include tablet-landscape {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+      }
+
+      .opportunity {
+        margin-bottom: 23px;
+
+        h5 {
+          font-size: 24px;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 20px;
+
+            @include tablet-landscape {
+              margin-right: 6px;
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+          @include tablet-landscape {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+
+        p {
+          color: var(--text-color);
+
+          @include tablet-landscape {
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}

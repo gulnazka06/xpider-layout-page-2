@@ -1,0 +1,71 @@
+@import "../../assets/scss/mixin";
+
+.easy {
+  padding-top: 134px;
+  background-color: var(--easy-bg-color);
+
+  .cards {
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+      display: block;
+    }
+
+    .card {
+      background-color: var(--white);
+      border-radius: 5px;
+      margin: 0 15px -118px;
+      display: flex;
+      padding: 56px 48px;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 2px 9px rgba(0, 0, 0, 0.14221);
+
+      @include mobile {
+        margin: 15px;
+      }
+
+      &:last-child {
+        a {
+          border-bottom: none;
+        }
+      }
+
+      > div {
+        background-color: #F0F3FF;
+        padding: 36px;
+        border-radius: 50%;
+      }
+
+      h5 {
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+        margin: 37px 0 12px;
+
+        span {
+          display: block;
+          color: var(--blue);
+        }
+      }
+
+      p {
+        color: var(--text-color);
+        text-align: center;
+        margin: 0 0 43px;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 3px 0;
+        border-bottom: 3px solid var(--blue);
+
+        img {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}

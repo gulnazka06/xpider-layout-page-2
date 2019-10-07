@@ -1,0 +1,76 @@
+@import "../../assets/scss/mixin";
+
+.free {
+  background-color: var(--blue);
+  padding-top: 175px;
+  padding-bottom: 159px;
+
+  @include mobile {
+    padding: 134px 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: 34px;
+      line-height: 39px;
+      font-weight: bold;
+      color: var(--white);
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    p {
+      color: var(--grey);
+      line-height: 34px;
+      text-align: center;
+      margin: 16px 0 23px;
+    }
+
+    div {
+      display: flex;
+      background-color: var(--white);
+      border-radius: 5px;
+      margin-bottom: 14px;
+
+      @include mobile {
+        display: block;
+      }
+
+      input {
+        padding: 28px 26px 26px;
+        width: 275px;
+        font-size: 18px;
+        line-height: 21px;
+        background-color: transparent;
+        border-color: transparent;
+      }
+      button {
+        border: none;
+        border-left: 1px solid var(--hr-color);
+        border-radius: 0;
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--blue);
+        background-color: transparent;
+        padding: 31px 38px 29px 44px;
+
+        @include mobile {
+          border-top: 1px solid var(--hr-color);
+          width: 100%;
+        }
+      }
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--grey);
+    }
+  }
+}

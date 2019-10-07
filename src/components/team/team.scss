@@ -1,0 +1,94 @@
+@import "../../assets/scss/mixin";
+
+.stories {
+  background-color: var(--team-bg-color);
+  padding-top: 127px;
+  padding-bottom: 143px;
+
+  @include mobile {
+    padding: 134px 10px;
+  }
+
+  h4 {
+    color: var(--white);
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      display: block;
+    }
+
+    .director {
+      p {
+        font-size: 28px;
+        line-height: 48px;
+        color: var(--team-text-color);
+
+        @include tablet-landscape {
+          font-size: 18px;
+        }
+      }
+
+      div {
+        color: var(--white);
+        font-size: 21px;
+        line-height: 24px;
+        padding: 24px 0;
+
+        span {
+          display: block;
+          font-size: 16px;
+          line-height: 18px;
+          color: var(--head-color);
+          padding: 9px 0 0;
+        }
+      }
+    }
+    .img {
+      margin-left: 54px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include mobile {
+        margin-left: 0;
+
+        img {
+          width: 100%;
+          margin-top: 24px;
+        }
+      }
+
+      @include tablet-landscape {
+        margin-left: 22px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      div {
+        display: flex;
+        margin-top: 27px;
+
+        div {
+          width: 77px;
+          height: 9px;
+          background-color: var(--team-br-color);
+          opacity: 0.3;
+          border-radius: 5.5px;
+          margin: 0 9px;
+
+          &:first-child {
+            background-color: var(--blue);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
